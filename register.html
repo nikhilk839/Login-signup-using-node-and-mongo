@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="#" />
+	<title>REGISTRATION</title>
+	<style type="text/css">
+		input[type=text],input[type=password],input[type=tel], select 
+		{
+  			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button{
+		  width: 30%;		
+		  background-color: lightblue;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;			
+		}
+		button:hover{
+			background-color: grey;
+		}
+		.main{
+				margin-left: 30%;
+				width: 50%;
+			  	border-radius: 5px;
+  				background-color: #f2f2f2;
+  				padding: 20px;
+		}
+	</style>
+</head>
+<body>
+			<div class="main">
+				<form action="/register" method="post">
+					<span>
+						Register
+					</span>
+					<div>
+						<input name="u_name" type="text" placeholder="Name">
+					</div>
+					<div>
+						<input name="id" type="text" placeholder="User Id">
+					</div>
+					<div>
+						<input type="password" name="pass" placeholder="Password" required="required">
+					</div>
+					<div>
+						<input type="text" name="address" placeholder="Address" required="required">
+					</div>
+					<div>
+						<input type="tel" name="u_tel" placeholder="Enter contact number">
+					</div>
+					<div>
+						<select class="custom-select" name="u_type">
+		  					<option selected>select user type</option>
+		  					<option value="M">Manufacturer</option>
+		  					<option value="D">Distributor</option>
+		  					<option value="C">Customer</option>
+		  					<option value="T">Transporter</option>
+						</select>
+					</div>
+					<div>
+						<button type="submit">Register</button>
+					</div>
+				</form>
+			</div>
+</body>
+</html>
