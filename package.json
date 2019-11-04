@@ -13,7 +13,7 @@
     "body-parser": "^1.19.0",
     "express": "^3.21.2",
     "mongodb": "^2.2.33",
-    "mongoose": "^5.5.13",
+    "mongoose": "^5.7.5",
     "mongose": "0.0.2-security"
   }
 }
